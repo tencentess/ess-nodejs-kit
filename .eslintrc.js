@@ -5,12 +5,11 @@ module.exports = {
   },
   plugins: [
     'vue',
+    'prettier'
   ],
   extends: [
     'eslint:recommended',
     'plugin:vue/essential',
-    // '@vue/prettier',
-    '@tencent/eslint-config-tencent',
   ],
   parser: 'vue-eslint-parser',
 
@@ -21,6 +20,9 @@ module.exports = {
   },
   rules: {
     'max-len': 0,
-    'no-param-reassign': 0
+    'no-param-reassign': 0,
+    'implicit-arrow-linebreak': 0,
+    'function-paren-newline': 0,
+    'arrow-parens': 0
   },
 };
