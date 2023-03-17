@@ -39,7 +39,7 @@ const init = async () => {
     console.log('🚀 ~ file: init.js:35 ~ init ~ data:', data);
     const map = data.Response;
     const envFileContent = Object.entries(map).map(([key, val]) => `X_ESS_${key.toUpperCase()}='${val}'`)
-      .join('/n');
+      .join('\n');
 
     fs.writeFileSync(path.resolve(process.cwd(), '.env.ess'), envFileContent, 'utf-8');
   }
