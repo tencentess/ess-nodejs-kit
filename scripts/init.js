@@ -1,7 +1,6 @@
 const fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
-const dotenv = require('dotenv');
 
 const init = async () => {
   const sessionRes = await fetch('https://appgw.test.ess.tencent.cn/consoleapp/?X-Action=CreateSession', {
@@ -43,11 +42,6 @@ const init = async () => {
       .join('/n');
 
     fs.writeFileSync(path.resolve(process.cwd(), '.env.ess'), envFileContent, 'utf-8');
-
-    dotenv.config({
-      path: path.resolve(process.cwd(), '.env.ess'),
-      override: true,
-    });
   }
 };
 
