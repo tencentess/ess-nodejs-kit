@@ -1,6 +1,6 @@
 # ess-nodejs-kit
 
-基于vue-admin-template+element-ui的腾讯电子签企业应用集成代码示例
+基于vue-admin-template+element-ui的腾讯电子签企业应用集成代码示例。
 
 
 
